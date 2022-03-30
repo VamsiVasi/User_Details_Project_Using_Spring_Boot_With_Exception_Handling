@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "4bdbec48-54d1-415c-a0fd-0eb38d270f69",
+		"name": "User_Details",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserController - createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Venky\",\r\n    \"fullname\": \"Venkatesh\",\r\n    \"email\": \"venky123@gmail.com\",\r\n    \"address\": \"VSP\",\r\n    \"mobile\": 9876554321,\r\n    \"company\": \"ABC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2904/user",
+					"host": [
+						"localhost"
+					],
+					"port": "2904",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserController - getAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2904/user",
+					"host": [
+						"localhost"
+					],
+					"port": "2904",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserController - getUserByUsername",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2904/user/Venky",
+					"host": [
+						"localhost"
+					],
+					"port": "2904",
+					"path": [
+						"user",
+						"Venky"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserController - updateUserByUsername",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Venky\",\r\n    \"fullname\": \"Venkatesh Kumar\",\r\n    \"email\": \"venky123@gmail.com\",\r\n    \"address\": \"VSP\",\r\n    \"mobile\": 9876554321,\r\n    \"company\": \"ABC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2904/user/Venky",
+					"host": [
+						"localhost"
+					],
+					"port": "2904",
+					"path": [
+						"user",
+						"Venky"
+					]
+				},
+				"description": "Returns the number of vowels and special characters for a username"
+			},
+			"response": []
+		},
+		{
+			"name": "UserController - deleteUserByUsername",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:2904/user/Venky",
+					"host": [
+						"localhost"
+					],
+					"port": "2904",
+					"path": [
+						"user",
+						"Venky"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
