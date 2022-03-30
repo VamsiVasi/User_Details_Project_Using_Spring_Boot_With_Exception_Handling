@@ -1,0 +1,13 @@
+package com.stark.user_details;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class UserDetailsErrorHandlingApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
